@@ -35,65 +35,16 @@ A unified decision engine that combines customer segmentation, churn risk predic
 ### FR3: Intelligent Incentive Recommendation
 - **FR3.1** Calculate minimum effective incentive based on customer value and churn risk
 - **FR3.2** Recommend incentive type (discount, upgrade, loyalty points, personalized offer)
-- **FR3.3** Estimate ROI for each recommended action
-- **FR3.4** Learn from past incentive effectiveness to improve recommendations
-- **FR3.5** Avoid over-discounting by setting value-based thresholds
+- **FR3.3** Learn from past incentive effectiveness to improve recommendations
+- **FR3.4** Avoid over-discounting by setting value-based thresholds
 
-### FR4: Decision Engine
-- **FR4.1** Prioritize customers by intervention urgency (risk × value)
-- **FR4.2** Generate actionable retention campaigns with specific recommendations
-- **FR4.3** Automate low-risk interventions based on predefined rules
-- **FR4.4** Flag high-value customers for manual review and personalized outreach
-- **FR4.5** Track decision outcomes and feed back into learning system
+### FR4: Analytics & Reporting
+- **FR4.1** Dashboard showing at-risk customer pipeline
+- **FR4.2** Revenue impact analysis (saved vs. cost of incentives)
+- **FR4.3** Churn prediction model performance metrics
+- **FR4.4** Incentive effectiveness tracking
+- **FR4.5** Cohort analysis and trend visualization
 
-### FR5: Analytics & Reporting
-- **FR5.1** Dashboard showing at-risk customer pipeline
-- **FR5.2** Revenue impact analysis (saved vs. cost of incentives)
-- **FR5.3** Churn prediction model performance metrics
-- **FR5.4** Incentive effectiveness tracking
-- **FR5.5** Cohort analysis and trend visualization
-
-### FR6: Integration & Data Management
-- **FR6.1** Ingest data from CRM, billing, support, and product usage systems
-- **FR6.2** Export recommendations to marketing automation platforms
-- **FR6.3** API for real-time risk scoring
-- **FR6.4** Batch processing for daily/weekly analysis
-- **FR6.5** Data quality monitoring and validation
-
-## Non-Functional Requirements
-
-### NFR1: Performance
-- Process churn predictions for 100K+ customers within 1 hour
-- Real-time API response time < 500ms for individual customer queries
-- Dashboard load time < 3 seconds
-
-### NFR2: Scalability
-- Support up to 1M active customers
-- Handle 10K API requests per minute
-- Horizontal scaling capability for growing customer base
-
-### NFR3: Accuracy
-- Churn prediction accuracy > 80% (AUC-ROC)
-- Incentive ROI prediction within ±15% of actual
-- False positive rate < 20% for high-value customers
-
-### NFR4: Security & Privacy
-- Encrypt customer data at rest and in transit
-- Role-based access control (RBAC)
-- Audit logging for all decisions and data access
-- GDPR/CCPA compliance for customer data handling
-
-### NFR5: Reliability
-- System uptime > 99.5%
-- Automated model retraining pipeline
-- Graceful degradation if ML models fail
-- Data backup and disaster recovery
-
-### NFR6: Usability
-- Intuitive dashboard requiring < 30 minutes training
-- Clear explanations for all recommendations
-- Configurable business rules and thresholds
-- Export capabilities for reports
 
 ## Key Differentiators
 
@@ -134,3 +85,4 @@ A unified decision engine that combines customer segmentation, churn risk predic
 - Regulatory compliance requirements vary by region
 - Model explainability required for high-value decisions
 - Privacy restrictions on certain customer data types
+
