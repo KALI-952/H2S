@@ -104,25 +104,8 @@ Support Interactions:
 **Purpose**: Calculate customer value and create meaningful segments
 
 **Algorithms**:
-- **CLV Calculation**: Predictive CLV using historical purchase patterns
-  - Formula: CLV = (Average Order Value × Purchase Frequency × Customer Lifespan) - Acquisition Cost
-- **RFM Analysis**: Recency, Frequency, Monetary scoring
 - **K-Means Clustering**: Behavioral segmentation based on usage patterns
 
-**Output**:
-```json
-{
-  "customer_id": "C12345",
-  "clv": 5420.50,
-  "segment": "Premium",
-  "rfm_score": {
-    "recency": 4,
-    "frequency": 5,
-    "monetary": 5
-  },
-  "behavioral_cluster": "power_user"
-}
-```
 
 ### 3. Churn Prediction Module
 
@@ -140,21 +123,6 @@ Support Interactions:
 - Payment signals: failed payments, downgrade requests
 - Temporal features: days since last purchase, trend slopes
 
-**Output**:
-```json
-{
-  "customer_id": "C12345",
-  "churn_probability": 0.78,
-  "confidence": 0.85,
-  "time_to_churn_days": 45,
-  "risk_level": "HIGH",
-  "top_factors": [
-    {"feature": "days_since_last_login", "impact": 0.32},
-    {"feature": "support_ticket_count", "impact": 0.28},
-    {"feature": "payment_failures", "impact": 0.21}
-  ]
-}
-```
 
 **Model Training Pipeline**:
 1. Feature extraction from data warehouse
@@ -398,3 +366,4 @@ Response:
 - Causal inference for true incentive impact
 - Expansion prediction (upsell opportunities)
 - Competitive intelligence integration
+
